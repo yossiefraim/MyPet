@@ -32,30 +32,6 @@
   			
   			<!-- Timeline -->
 			<div id="timeline">
-			   <div class="timeline-item">
-			       <div class="timeline-icon">
-			            <img src="images/walk_white.png">
-			        </div>
-			        <div class="timeline-content right">
-			            <h2>17:00 Tamar Levi <a href="#" class="btn" id="event">Sign</a></h2> 
-			        </div>
-			    </div>
-			    <div class="timeline-item">
-			       <div class="timeline-icon">
-			            <img src="images/water_white.png">
-			        </div>
-			        <div class="timeline-content right">
-			            <h2>17:30 Oren Levi <a href="#" class="btn" id="event">Sign</a></h2> 
-			        </div>
-			    </div>
-			    <div class="timeline-item">
-			       <div class="timeline-icon">
-			            <img src="images/vet_white.png">
-			        </div>
-			        <div class="timeline-content right">
-			            <h2>18:30 Haim Levi <a href="#" class="btn" id="event">Sign</a></h2> 
-			        </div>
-			    </div>
 			</div>
   		</div>
 	</div>
@@ -109,7 +85,7 @@
    			<h6>Food event</h6>
  		 </div>	
   		<div data-role="main" class="ui-content">
-    		<form id="newEvent" method="get">
+    		<form id="newEvent" method="get" action="includes/setEvents.php">
     			<label for="date">Select Start date</label>
     			<input type="date" name="date" data-clear-btn="true" data-native-menu="false" id="date"value>
     			<label for="time">Select Start time</label>
@@ -124,7 +100,7 @@
       						<option value="Dan Levi">Dan Levi</option>
    						</select>
   					</fieldset>	
-  				<input type="button" class="button"  data-inline="false" data-icon="plus" data-iconpos="right" value="Add to Calendar">
+  				<input type="submit" class="button"  data-icon="plus" data-iconpos="right" value="Add to Calendar">
     		</form>    	
   		</div>
 	</div>

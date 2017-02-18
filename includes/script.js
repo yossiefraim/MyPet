@@ -7,38 +7,43 @@ $("#page1").ready(function() {
         $(this).hide();
      });
    });
-//send event data
-$("#page4").ready(function() {
-$("input[type=button]").click(function(e) {
-		var time = $("#time").val();
-		var member = $("#member").val();
-		console.log(time);
-        var x1 = $("<div></div>");
-        x1.addClass("timeline-item");
-        var x2 = $("<div></div>");
-        x2.addClass("timeline-icon");
-        var x3 = $("<img />");
-        x3.attr('src','images/food_white.png');
-        x2.append(x3);
-        x1.append(x2);
-    	var x4 = $("<div></div>");
-    	x4.addClass("timeline-content right");
-    	var x5 = $("<h2></h2").text(time+" "+member);
-    	var x6 = $("<a></a>").text("Sign");
-    	x6.attr('href','#');
-    	x6.addClass("btn ui-link");
-    	$(x6).attr('id','event');
-    	x5.append(x6);
-    	x4.append(x5);
-    	x1.append(x4);
-    	var timeline = $("#timeline");
-        timeline.append(x1);
-        console.log( timeline.text());
-        $("#newEvent")[0].reset();
-        $.mobile.changePage( "#page1", {} );
 
-    });
-});
+//send event data
+// $("#page4").ready(function() {
+ //$("input[type=button]").click(function(e) {
+		// var time = $("#time").val();
+		// var member = $("#member").val();
+		// var event = "food_white.png"
+// 		
+// 		
+// 		
+		// console.log(time);
+        // var x1 = $("<div></div>");
+        // x1.addClass("timeline-item");
+        // var x2 = $("<div></div>");
+        // x2.addClass("timeline-icon");
+        // var x3 = $("<img />");
+        // x3.attr('src','images/food_white.png');
+        // x2.append(x3);
+        // x1.append(x2);
+    	// var x4 = $("<div></div>");
+    	// x4.addClass("timeline-content right");
+    	// var x5 = $("<h2></h2").text(time+" "+member);
+    	// var x6 = $("<a></a>").text("Sign");
+    	// x6.attr('href','#');
+    	// x6.addClass("btn ui-link");
+    	// $(x6).attr('id','event');
+    	// x5.append(x6);
+    	// x4.append(x5);
+    	// x1.append(x4);
+    	// var timeline = $("#timeline");
+        // timeline.append(x1);
+        // console.log( timeline.text());
+        // $("#newEvent")[0].reset();
+        // $.mobile.changePage( "#page1", {} );
+// 
+    // });
+// });
 //create group stats
 $("#page7").ready(function() {
 	var chart = new CanvasJS.Chart("chartContainer",
@@ -192,6 +197,27 @@ var footer = '<div id="footer" data-role="footer" data-position="fixed" class="u
 
  
 });
+//DB creat event list
+function getEventsData(events){
+	var posting = $.post("includes/PostEvents.php",{
+		events:events
+	});	
+	posting.done(function(data){
+		//alert(data);
+		$("#timeline").append(data);
+		// ("#content").html(data);
+	});
+	posting.fail(function(){
+		alert("failed");
+	});
+}
+	
+$("#page1").ready(function() {
+	getEventsData("events");
+	//location.reload();
+	
+});
+
 //star rate function
 $("#page5").ready(function() {
 	for (var i=1;i<5;i++){
