@@ -1,0 +1,261 @@
+
+@media(max-width:767px) and (min-width:370px)
+{
+	margin:0px;
+	padding:0px;
+
+ header, footer, main {
+	display:block;
+}
+/*.ui-header-fixed{
+	padding-bottom:5%;
+}*/
+.ui-page{
+	background:#9e9e9e;
+}
+.ui-page .ui-header{
+	background:#9e9e9e;
+}
+.ui-panel-wrapper {
+	background:#c6c6c6 !important;
+	height: 100%; 
+}
+.ui-page .ui-header h4{
+	margin-top: 20%;
+    background: #263238;
+    text-align: -webkit-center;
+    color:#FFFFFF;
+    width: 100%;
+    margin-left: 0%;
+    font-size: 25px;
+    font-family: Courier;
+}
+.ui-page-theme-a .ui-bar-inherit{
+	text-shadow:none;
+}
+.ui-page .ui-header h6{
+	margin-left: 0;
+    text-align: -webkit-left;
+    background: #E0E0E0;
+    color:#212121;
+    width: 100%;
+}
+html head+body .ui-btn.ui-btn-b{
+	background-color:#263238;
+}
+#menu{ 
+	background-color:#263238;
+	border: none;
+	float:left;
+	margin-left:5%;
+}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a {
+	background-color:#9e9e9e;
+}
+#calendarButt{
+	background-color:#263238;
+	border: none;
+	float:right;
+	margin-right:5%;
+}
+.ui-page .ui-footer{
+	background:#263238;
+	height:8%;
+}
+.ui-table-columntoggle-btn {
+    display: none !important;
+}
+th {
+    border-bottom: 1px solid #212121;
+}
+
+tr:nth-child(even) {
+	border-bottom: 1px solid #212121;
+    background: #f5f5f5;
+}
+tr:nth-child(odd) {
+	border-bottom: 1px solid #212121;
+    background: #eeeeee;
+}
+#myPanel{
+	background:rgba(33,33,33,0.7);
+}
+#logo a{
+	float:right;
+    display: block;
+    height:100%;
+    padding-bottom:7%;
+    font-family:cursive;
+    font-weight:bold;
+    font-size:22px;
+    background: url(../images/logo.png) no-repeat ;
+    margin-right: 10%;
+    padding-left:25%;
+    padding-top: 5%;
+    color: black;
+    text-decoration: none;
+}
+#logo span{
+	float:left;
+	position:relative;
+	font-family:cursive;
+    font-weight:bold;
+    font-size:22px;
+ 	color: black;
+    text-decoration: none;
+    margin-left:10%;
+ 	padding-top: 5%;
+}
+/*.ui-header h4 span{
+	font-size:25px;
+	font-family: Courier;
+}*/
+#selectOption {
+	float: left;
+    width: 30%;
+    color: #212121;
+    margin-left: 5%;
+    margin-top: 8%;
+    background:#ECEFF1;
+    border-radius: 15%;
+
+}
+
+#selectFrequency{
+	float: left;
+	background-color:#455A64;
+	color:#f5f5f5;
+	width: 70%;
+	margin-left:10%;
+	margin-top:12%;
+}
+.ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited{
+	color:#E0E0E0;
+}
+.ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head+body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head+body .ui-btn.ui-btn-b:visited{
+	background-color:#263238;
+}
+.ui-page-theme-a .ui-btn{
+	background-color:#455A64;
+	color:#f5f5f5;
+	text-shadow:none;	
+}
+#page5 .ui-listview{
+	margin-top:0%;
+	
+}
+#page5 .ui-li-has-thumb a{
+	margin-bottom:1%;
+	background-color:#455A64;
+	color:#f5f5f5;
+	text-shadow:none;	
+}
+#page5 .ui-li-has-thumb a img{
+	padding:3%;
+}
+.done{
+	background:#78909C !important ;
+
+}
+#event{
+	display:inline !important;
+}
+#chartContainer,#chartContainer2{
+	height:450px;
+	width:400px;
+}
+.canvasjs-chart-credit ui-link{
+	color:#c6c6c6 !important;
+}
+#chartContainer .canvasjs-chart-canvas{
+	height: 300px !important;
+	margin-left:-13% !important;
+}
+html head+body .ui-btn.ui-btn-b.ui-btn-active{
+	background-color: #263238;
+	border-color:#263238;
+	background:#263238;
+	color:#263238;
+}
+html head+body .ui-btn.ui-btn-b:focus{
+	box-shadow: none;
+}
+#petShopsNearMe{
+	width:80%;
+	height:100%;
+	margin: 0 auto;
+	background-color: #455a64;
+}
+#petShopsNearMe h2{
+	color:#f5f5f5;
+}
+#petShopsNearMe li{
+	list-style: none;
+	color:#cbd5d8;
+}
+#petShopsNearMe  img{
+	display:inline-block;
+	float:right;
+}
+#petShopsNearMe ul{
+	list-style: none;
+	color:#e8f3f8;
+}
+.ui-listview .ui-group-theme-c{
+	font-weight:bold;
+	background-color:green;
+}
+.ui-listview>li.ui-first-child>a.ui-btn {
+	text-align:left;
+}
+.ui-listview>li.ui-first-child>a img {
+	border-radius:40px 40px 40px 40px;
+	display:block;
+	margin-top:30px;
+	margin-left:95px;
+}
+.ui-listview li a.ui-btn{
+	    height: 70px;
+}
+.ui-listview li a.ui-btn span{
+	  position:relative;
+	  top:20px;
+}
+/*.ui-listview li img{
+	display:block;
+	margin-top:30px;
+	margin-left:95px;
+}*/
+#main5 .ui-listview li img{
+	margin-top:0px;
+	margin-left:0px;
+}
+#main5 .ui-listview li a.ui-btn {
+    text-align: left;
+}
+#profile{
+	background-image: url("../images/lewis1.png");
+	background-repeat: no-repeat;
+	background-position:90% 50%;
+}
+#petshop{
+	background-image: url("../images/cart_white.png");
+	background-repeat: no-repeat;
+	background-position:90% 50%;
+}
+#vets{
+	background-image: url("../images/vets.png");
+	background-repeat: no-repeat;
+	background-position:90% 50%;
+}
+#trainers{
+	background-image: url("../images/trainers.png");
+	background-repeat: no-repeat;
+	background-position:90% 50%;
+}
+#dayCare{
+	background-image: url("../images/dayCare.png");
+	background-repeat: no-repeat;
+	background-position:90% 50%;
+}
+}

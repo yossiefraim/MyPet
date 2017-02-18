@@ -1,0 +1,23 @@
+{
+"city":{
+		"Ramat_Gan":[
+			{"name":"Pet supermarket" ,"address":"Ze'ev Jabotinsky 95", "tel":"03-600-7878"},
+			{"name":"ZooLu" ,"address":"Herzl 58", "tel":"03-670-1179"},
+			{"name":"petSe" ,"address":"Arlozorov 32", "tel":"03-673-3504"},
+			{"name":"The Lion King" ,"address":"Arlozorov 32", "tel":"03-602-0202"},
+			{"name":"Bull L'pet" ,"address":"Krinitzy 34", "tel":"1-700-700-781"}
+		],
+		"Tel_Aviv":[
+			{"name":"pet" ,"address":"hrzel", "tel":"03040204"},
+			{"name":"pet" ,"address":"hrzel", "tel":"03040204"},
+			{"name":"pet" ,"address":"hrzel", "tel":"03040204"},
+			{"name":"pet" ,"address":"hrzel", "tel":"03040204"}
+		],
+		"Haifa":[
+			{"name":"pet" ,"address":"hrzel", "tel":"03040204"},
+			{"name":"pet" ,"address":"hrzel", "tel":"03040204"},
+			{"name":"pet" ,"address":"hrzel", "tel":"03040204"},
+			{"name":"pet" ,"address":"hrzel", "tel":"03040204"}
+		]
+	}			
+}

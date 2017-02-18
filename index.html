@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<!-- Include the jQuery library -->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!-- Rating CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.css">
+		<!-- Rating JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.js"></script>
+		<script src="includes/canvasjs.min.js"></script>
+		<link rel="stylesheet" href="includes/timeline.css">
+		<link rel="stylesheet" href="includes/style.css">
+		<script src="includes/script.js"></script>
+</head>
+<body>
+	<div data-role="page" id="page1">
+  		<div data-role="header" data-position="fixed">
+    		<div id="logo">
+			<span>plan for it</span><a herf="#" id="logo">care for it!</a> 
+    		</div>
+   			<h4>
+   				<a href="#myPanel" id="menu" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   				Calendar
+   				<a href="#page2" data-transition="slide" id="calendarButt" class="ui-btn ui-icon-plus ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   			</h4>
+ 		 </div>	
+  		<div data-role="main" class="ui-content">
+  			
+  			<!-- Timeline -->
+			<div id="timeline">
+			   <div class="timeline-item">
+			       <div class="timeline-icon">
+			            <img src="images/walk_white.png">
+			        </div>
+			        <div class="timeline-content right">
+			            <h2>17:00 Tamar Levi <a href="#" class="btn" id="event">Sign</a></h2> 
+			        </div>
+			    </div>
+			    <div class="timeline-item">
+			       <div class="timeline-icon">
+			            <img src="images/water_white.png">
+			        </div>
+			        <div class="timeline-content right">
+			            <h2>17:30 Oren Levi <a href="#" class="btn" id="event">Sign</a></h2> 
+			        </div>
+			    </div>
+			    <div class="timeline-item">
+			       <div class="timeline-icon">
+			            <img src="images/vet_white.png">
+			        </div>
+			        <div class="timeline-content right">
+			            <h2>18:30 Haim Levi <a href="#" class="btn" id="event">Sign</a></h2> 
+			        </div>
+			    </div>
+			</div>
+  		</div>
+	</div>
+	<div data-role="page" id="page2">
+		<div data-role="header" data-position="fixed">
+    		<div id="logo">
+			<span>plan for it</span><a herf="#" id="logo">care for it!</a> 
+    		</div>
+   			<h4>
+   				<a href="#myPanel" id="menu" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext ui-nodisc-icon "></a>
+   				New event
+   				<a href="#page1" data-transition="slide" id="calendarButt" class="ui-btn ui-icon-back ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   			</h4>
+   			<h6>Chose event</h6>
+ 		 </div>	
+  		<div data-role="main" class="ui-content">
+    	<a href="#" id="selectOption" class="ui-btn ui-btn-inline"><img src="images/walk.png"><br>Walk</a>
+    	<a href="#page3" data-transition="slide" id="selectOption" class="ui-btn ui-btn-inline"><img src="images/food.png"><br>Feed</a>
+    	<a href="#" id="selectOption" class="ui-btn ui-btn-inline"><img src="images/water.png"><br>Water</a>
+    	<a href="#" id="selectOption" class="ui-btn ui-btn-inline"><img src="images/vet.png"><br>Vet</a>
+  		</div>
+	</div>
+	<div data-role="page" id="page3">
+		<div data-role="header" data-position="fixed">
+    		<div id="logo">
+			<span>plan for it</span><a herf="#" id="logo">care for it!</a> 
+    		</div>
+   			<h4>
+   				<a href="#myPanel" id="menu" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   				New event
+   				<a href="#page2" data-transition="slide" id="calendarButt" class="ui-btn ui-icon-back ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   			</h4>
+   			<h6>Food event</h6>
+ 		 </div>	
+  		<div data-role="main" class="ui-content">
+    	<a href="#page4" data-transition="slide" id="selectFrequency" class="ui-btn ui-btn-inline">Daily</a>
+    	<a href="#" id="selectFrequency" class="ui-btn ui-btn-inline">Weekly</a>
+    	<a href="#" id="selectFrequency" class="ui-btn ui-btn-inline">One-Time</a>
+  		</div>
+	</div>
+	<div data-role="page" id="page4">
+		<div data-role="header" data-position="fixed">
+    		<div id="logo">
+			<span>plan for it</span><a herf="#" id="logo">care for it!</a> 
+    		</div>
+   			<h4>
+   				<a href="#myPanel" id="menu" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   				New event
+   				<a href="#page3" data-transition="slide" id="calendarButt" class="ui-btn ui-icon-back ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   			</h4>
+   			<h6>Food event</h6>
+ 		 </div>	
+  		<div data-role="main" class="ui-content">
+    		<form id="newEvent" method="get">
+    			<label for="date">Select Start date</label>
+    			<input type="date" name="date" data-clear-btn="true" data-native-menu="false" id="date"value>
+    			<label for="time">Select Start time</label>
+    			<input type="time" name="time" data-clear-btn="true" id="time"value>
+  				<fieldset class="ui-field-contain">
+  					<label for="member">Select Member</label>
+    					<select name="member" id="member">
+    						<option value="Add Member">Add Member</option>
+    						<option value="Haim Levi">Haim Levi</option>
+      						<option value="Tamar Levi">Tamar Levi</option>
+      						<option value="Oren Levi">Oren Levi</option>
+      						<option value="Dan Levi">Dan Levi</option>
+   						</select>
+  					</fieldset>	
+  				<input type="button" class="button"  data-inline="false" data-icon="plus" data-iconpos="right" value="Add to Calendar">
+    		</form>    	
+  		</div>
+	</div>
+	<div data-role="page" id="page5">
+		<div data-role="header" data-position="fixed">
+    		<div id="logo">
+			<span>plan for it</span><a herf="#" id="logo">care for it!</a> 
+    		</div>
+   			<h4>
+   				<a href="#myPanel" id="menu" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   				My Group
+   				<a href="#page1" data-transition="slide" id="calendarButt" class="ui-btn ui-icon-calendar ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   			</h4>
+ 		 </div>	
+  		<div data-role="main" id="main5" class="ui-content">
+    		<ul data-role="listview" data-inset="true">
+      			<li>
+       				<a href="#">
+        				<img src="images/profile.png">
+        				<h2>Haim Levi</h2>
+        				<p>Group manager
+        					<div id="rateYo1"></div>
+        				</p>
+        			</a>
+      			</li>
+      			<li>
+        			<a href="#">
+        				<img src="images/profile.png">
+        				<h2>Tamar Levi</h2>
+        				<p><div id="rateYo2"></div></p>
+        			</a>
+      			</li>
+      			<li>
+        			<a href="#">
+        				<img src="images/profile.png">
+        				<h2>Dan Levi</h2>
+        				<p><div id="rateYo3"></div></p>
+        			</a>
+      			</li>
+      			<li>
+        			<a href="#">
+        				<img src="images/profile.png">
+        				<h2>Oren Levi</h2>
+        				<p><div id="rateYo4"></div></p>
+        			</a>
+      			</li>
+    		</ul>    	
+  		</div>
+	</div>
+		<div data-role="page" id="page6">
+		<div data-role="header" data-position="fixed">
+    		<div id="logo">
+			<span>plan for it</span><a herf="#" id="logo">care for it!</a> 
+    		</div>
+   			<h4>
+   				<a href="#myPanel" id="menu" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   				New event
+   				<a href="#page2" data-transition="slide" id="calendarButt" class="ui-btn ui-icon-back ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   			</h4>
+   			<h6>Food event</h6>
+ 		 </div>	
+  		<div data-role="main" class="ui-content">
+    	<a href="" id="selectFrequency" class="ui-btn ui-btn-inline">Group</a>
+    	<a href="#" id="selectFrequency" class="ui-btn ui-btn-inline">Vet Stats</a>
+  		</div>
+	</div>
+	<div data-role="page" id="page7">
+		<div data-role="header" data-position="fixed">
+    		<div id="logo">
+			<span>plan for it</span><a herf="#" id="logo">care for it!</a> 
+    		</div>
+   			<h4>
+   				<a href="#myPanel" id="menu" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   				New event
+   				<a href="#page2" data-transition="slide" id="calendarButt" class="ui-btn ui-icon-back ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   			</h4>
+   			<h6>Group Stats</h6>
+ 		 </div>	
+  		<div data-role="main" class="ui-content">
+    	<div id="chartContainer"></div>
+  		</div>
+	</div>
+	<div data-role="page" id="page8" >
+		<div data-role="header" data-position="fixed">
+    		<div id="logo">
+			<span>plan for it</span><a herf="#" id="logo">care for it!</a> 
+    		</div>
+   			<h4>
+   				<a href="#myPanel" id="menu" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   				New event
+   				<a href="#page2" data-transition="slide" id="calendarButt" class="ui-btn ui-icon-back ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   			</h4>
+   			<h6>Tamar Stats - last 30 days</h6>
+ 		 </div>	
+  		<div data-role="main" class="ui-content">
+    	<div id="chartContainer2"></div>
+  		</div>
+	</div>
+	<div data-role="page" id="page9" >
+		<div data-role="header" id="head9" data-position="fixed">
+    		<div id="logo">
+			<span>plan for it</span><a herf="#" id="logo">care for it!</a> 
+    		</div>
+   			<h4>
+   				<a href="#myPanel" id="menu" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   				New event
+   				<a href="#page2" data-transition="slide" id="calendarButt" class="ui-btn ui-icon-back ui-corner-all ui-btn-icon-notext ui-nodisc-icon"></a>
+   			</h4>
+   			<h6>Pet Shops Near me</h6>
+ 		 </div>	
+  		<div data-role="main" class="ui-content" id="petShopsNearMe">
+  		</div>
+	</div>
+</body>
+</html>
+
