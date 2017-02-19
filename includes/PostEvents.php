@@ -15,8 +15,7 @@
 		$event="";
 		$date="";
 		$time="";
-		$member="";
-			
+		$member="";		
 		while($row = mysqli_fetch_assoc($result)){
 			$html .= '<div class="timeline-item">
 			       <div class="timeline-icon">
@@ -27,7 +26,6 @@
 			        </div>
 			    </div>';
 		}
-		
 		echo $html;
 	}
 ?>
